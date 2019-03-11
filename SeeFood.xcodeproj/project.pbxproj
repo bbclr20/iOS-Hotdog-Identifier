@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B54C1501221CDFC200E2F83B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C1500221CDFC200E2F83B /* AppDelegate.swift */; };
-		B54C1503221CDFC200E2F83B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C1502221CDFC200E2F83B /* ViewController.swift */; };
 		B54C1506221CDFC200E2F83B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54C1504221CDFC200E2F83B /* Main.storyboard */; };
 		B54C1508221CDFC200E2F83B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54C1507221CDFC200E2F83B /* Assets.xcassets */; };
 		B54C150B221CDFC200E2F83B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54C1509221CDFC200E2F83B /* LaunchScreen.storyboard */; };
+		B54C1513221CE39A00E2F83B /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B54C1512221CE39900E2F83B /* Inceptionv3.mlmodel */; };
+		B577CA6E22360AFD0058313A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577CA6D22360AFD0058313A /* ViewController.swift */; };
+		B577CA74223617620058313A /* ViewControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577CA73223617620058313A /* ViewControllerNew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B54C14FD221CDFC200E2F83B /* SeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54C1500221CDFC200E2F83B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B54C1502221CDFC200E2F83B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B54C1505221CDFC200E2F83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B54C1507221CDFC200E2F83B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54C150A221CDFC200E2F83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54C150C221CDFC200E2F83B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54C1512221CE39900E2F83B /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		B577CA6D22360AFD0058313A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B577CA73223617620058313A /* ViewControllerNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerNew.swift; sourceTree = "<group>"; };
+		B577CA77223631BA0058313A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,8 @@
 		B54C14F4221CDFC200E2F83B = {
 			isa = PBXGroup;
 			children = (
+				B577CA77223631BA0058313A /* README.md */,
+				B577CA7622362FF60058313A /* Model */,
 				B54C14FF221CDFC200E2F83B /* SeeFood */,
 				B54C14FE221CDFC200E2F83B /* Products */,
 			);
@@ -55,13 +62,22 @@
 			isa = PBXGroup;
 			children = (
 				B54C1500221CDFC200E2F83B /* AppDelegate.swift */,
-				B54C1502221CDFC200E2F83B /* ViewController.swift */,
 				B54C1504221CDFC200E2F83B /* Main.storyboard */,
+				B577CA6D22360AFD0058313A /* ViewController.swift */,
+				B577CA73223617620058313A /* ViewControllerNew.swift */,
 				B54C1507221CDFC200E2F83B /* Assets.xcassets */,
 				B54C1509221CDFC200E2F83B /* LaunchScreen.storyboard */,
 				B54C150C221CDFC200E2F83B /* Info.plist */,
 			);
 			path = SeeFood;
+			sourceTree = "<group>";
+		};
+		B577CA7622362FF60058313A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B54C1512221CE39900E2F83B /* Inceptionv3.mlmodel */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54C1503221CDFC200E2F83B /* ViewController.swift in Sources */,
+				B577CA6E22360AFD0058313A /* ViewController.swift in Sources */,
+				B54C1513221CE39A00E2F83B /* Inceptionv3.mlmodel in Sources */,
 				B54C1501221CDFC200E2F83B /* AppDelegate.swift in Sources */,
+				B577CA74223617620058313A /* ViewControllerNew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +293,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A2CTCTHSR;
 				INFOPLIST_FILE = SeeFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tw.ben.SeeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +309,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A2CTCTHSR;
 				INFOPLIST_FILE = SeeFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tw.ben.SeeFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
